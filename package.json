@@ -6,7 +6,10 @@
   "script": {
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
-    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx"
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx",
+
+    "lint:prettier": "prettier --check \"src/**/*\" --end-of-line auto",
+    "prettier": "prettier -c --write \"src/**/*\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
@@ -14,6 +17,7 @@
     "eslint": "^7.24.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
     "typescript": "^4.2.4"
   }
 }
