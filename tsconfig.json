@@ -4,11 +4,15 @@
 
     /* Basic Options */
     "incremental": true,                         /* Enable incremental compilation */
-    "target": "ESNext",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "target": "ES6",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
     "module": "ESNext",                          /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
     "lib": [
-      "ESNext",
-      "DOM"
+      "ES5",
+      "ES6",
+      "DOM",
+      "DOM.Iterable",
+      "ScriptHost",
+      "ES2016.Array.Include"
     ],                                           /* TS 需要引用的库，即声明文件，ES5 默认 dom,es5,scripthost. */
     "allowJs": true,                             /* 允许编译 JS 文件(js,jsx) */
     "checkJs": true,                             /* Report errors in .js files */
@@ -48,7 +52,7 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",                  /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    "baseUrl": ".",                              /* Base directory to resolve non-absolute module names. */
+    "baseUrl": "./",                             /* Base directory to resolve non-absolute module names. */
     "paths": {
       "@/*": ["./src/*"]
     },                                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
@@ -67,7 +71,7 @@
     // "inlineSources": true,                       /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 
     /* Experimental Options */
-    // "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
+    "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
 
     /* Advanced Options */
